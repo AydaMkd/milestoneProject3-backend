@@ -125,7 +125,7 @@ router.put('/myrecipes/:id/:user', auth, async (req, res) => {
   }
 });
 
-router.get('/search/:query', auth, async (req, res) => {
+router.get('/search/:query', async (req, res) => {
   try {
     //  const { name } = req.query;
     const recipes = await
