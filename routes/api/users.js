@@ -30,18 +30,14 @@ router.post(
       if(user){
        return res.status(400).json({errors:[{msg:'User already exists'}]});
       }
-      const avatar = gravatar.url(email, {
-        s: "200",
-        r: "pg",
-        d:"mm"
-      });
+
      
       user = new User(
         {
           username,
           email,
           password,
-          avatar
+      
         }
       )
        // encrypt password

@@ -3,7 +3,7 @@
 // CONFIGURATION / MIDDLEWARE
 const express = require("express");
 const app = express();
-const connectDB = require("./config/db");
+const connectDB = require("./db");
 const cors = require('cors');
 
 app.use(cors())

@@ -20,9 +20,6 @@ description: { type: String, required: true },
 name: {
     type: String
   },
-avatar: {
-    type: String
-  },
   likes: [
     {
       user: {
@@ -44,9 +41,7 @@ avatar: {
       name: {
         type: String
       },
-      avatar: {
-        type: String
-      },
+      
       date: {
         type: Date,
         default: Date.now

@@ -41,7 +41,6 @@ router.post(
         description: req.body.description,
         
         name: user.username,
-        avatar: user.avatar,
         user: req.user.id
       });
 
@@ -129,7 +128,7 @@ router.get('/search/:query', async (req, res) => {
   try {
     //  const { name } = req.query;
     const recipes = await
-      Recipe.find({ ingredients: { $regex: '.*' + req.params.query + '.*' } });
+      Recipe.find({ recipename: { $regex: '.*' + req.params.query + '.*' } });
     res.json(recipes);
   } catch (err) {
     console.error(err.message);
@@ -170,7 +169,6 @@ router.get('/search/:query', async (req, res) => {
   }
 );
 
-// delete comment
 // router.delete(
 //   '/comment/:id/:comment_id',
 //    auth, async (req, res) => {   

@@ -4,8 +4,9 @@
   "description": "This milestone project takes place at the end of the web engineer unit, and concludes the software development program. It's mean to put into practice the skills you learned in courses 9 (Cybersecurity), 10 (Principles of Programming with Python), and 11 (Advanced Topics)Â¸ as well as the rest of the course.",
   "main": "index.js",
   "scripts": {
-    "start": "node server",
-    "server": "nodemon server"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": " node index.js"
+   
   },
   "repository": {
     "type": "git",
@@ -13,6 +14,10 @@
   },
   "author": "",
   "license": "ISC",
+  "engine": {
+    "node": "16.x",
+    "npm":"8.x"
+  },
   "bugs": {
     "url": "https://github.com/AydaMkd/milestoneProject3-backend/issues"
   },
