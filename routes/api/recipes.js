@@ -5,7 +5,7 @@ const auth = require('../../middleware/auth');
 
 const User = require('../../models/User');
 
-const Recipe = require('../../models/Recipe');
+const Recipe = require('../../models/Rectte');
 const checkObjectId = require('../../middleware/checkObjectId');
 const { numberParser } = require("config/parser");
 
@@ -128,8 +128,9 @@ router.get('/search/:query', async (req, res) => {
   try {
     //  const { name } = req.query;
     const recipes = await
-      Recipe.find({ recipename: { $regex: '.*' + req.params.query + '.*' } });
-    res.json(recipes);
+      Recipe.find({ recipename: { $regex: '.*' + req.params.query + '.*', $options:'i' } });
+      
+      res.json(recipes);
   } catch (err) {
     console.error(err.message);
     res.status(500).send('Server Error');
