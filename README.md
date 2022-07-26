@@ -1,5 +1,6 @@
-# milestoneProject3-frontend
-This milestone project takes place at the end of the web engineer unit, and concludes the software development program. It's mean to put into practice the skills you learned in courses 9 (Cybersecurity), 10 (Principles of Programming with Python), and 11 (Advanced Topics)¸ as well as the rest of the course.
+# milestoneProject3-backend
+
+This milestone project takes place at the end of the web engineer unit, and concludes the software development program. It's meant to put into practice the skills we learned in courses 9 (Cybersecurity), 10 (Principles of Programming with Python), and 11 (Advanced Topics)¸ as well as the rest of the course.
 
 ## Deployment
 (add link) 
@@ -76,7 +77,7 @@ Made by:
  (copy link )
 
 ## Usage
-User should be able to submit their own recipes, keep their favorite receipts, rate and comment in other user's recipes. 
+The user should be able to submit their own recipes, keep their favorite ones, rate and comment on other users recipes. 
 
 ## Sources
 ### Learned to align images on readme.
@@ -115,22 +116,17 @@ a
 
 [ColorPalettes2](https://coolors.co/palette/fff460-fccf3c-fc9d28-ed7c1a-f25b09)
 
-
-### Issues
-
-#### Working as a team being in constant communication is key. We do run into a merge issues with our branches.
 <br>
 
 ### What we learned:
-- When working as a team, make sure to work in the latest version of the repository.
-- git pull origin main it is a must, so you do not override the previous work of your team.
-- Connecting the Front-End with Back-End.
-- Some programs version number change so our code deprecated. The code superseded by newer code. Code was not inmediately removed because can cause a regression in the application. 
-- Time frame, Install everything we want in short amount of time.
+
+- Connecting the Front-End and the Back-End.
+- To check the latest versions of the installed dependencies and be aware of what is deprecated. 
+- Time frame, implementing all the features we planned for our app in a short amount of time.
 
 ### Work In Progress
-- Calorie Counts
+- Calories Count
 - Serving Conversion (MyCookbook.io)
 - Add Difficulty Rating
 - inventory of ingredients in pantry 
-- link to grocery store shopping car for missing ingredients
+- Link to grocery store shopping cart for the missing ingredients.
