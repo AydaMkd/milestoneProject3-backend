@@ -1,8 +1,11 @@
 # milestoneProject3-frontend
-This milestone project takes place at the end of the web engineer unit, and concludes the software development program. It's mean to put into practice the skills you learned in courses 9 (Cybersecurity), 10 (Principles of Programming with Python), and 11 (Advanced Topics)¸ as well as the rest of the course.
+This milestone project takes place at the end of the web engineer unit, and concludes the software development program. It's meant to put into practice the skills you learned in courses 9 (Cybersecurity), 10 (Principles of Programming with Python), and 11 (Advanced Topics)¸ as well as the rest of the course.
 
 ## Deployment
-(add link) 
+
+https://recipesharingfrontend.herokuapp.com/
+
+
 
 ## Table of Contents
 
@@ -10,6 +13,8 @@ This milestone project takes place at the end of the web engineer unit, and conc
 - [Team](#team)
 - [Credits](#credits)
 - [Application](#application)
+- [Api](#api)
+- [App](#app)
 - [Wireframe](#wireframe)
 - [Technology](#technology)
 - [Install & Run](#install)
@@ -39,6 +44,27 @@ Made by:
 
 ![Image of our logo](https://github.com/AydaMkd/milestoneProject3-frontend/blob/main/public/images/HangryLogo2.jpeg?raw=true)
 
+### API (http://localhost:5000)
+| Method | Path                                 | Purpose                                   |
+| ------ | ------------------------------------ | ----------------------------------------- |
+| POST   | /                                    | Adds a recipe                             |
+| GET    | /                                    | Shows details of a recipe                 |
+| GET    | /myrecipes.                          | Show details of your saved myrecipe       |              
+| DELETE | /myrecipes/:id.                      | Deletes your saved myrecipe               |
+| PUT    | /myrecipes/:id/user.                 | Edits your saved myrecipe                 |
+| DELETE | /search/:query.                      | Searches recipe names                     | 
+
+### App (http://localhost:3000)
+| Path                  | Component                 | Purpose                                                                         |
+| --------------------- | ------------------------- | ------------------------------------------------------------------------------- |
+| /sign-up              | `users/SignUpForm.js`     | Takes you to the signup form                                                    |
+| /login                | `users/LoginForm.js`      | Takes you to the login screen                                                   |
+| /edit                 | `components/Edit.js`      | Allows you to edit a myrecipe                                                   |
+| /about                | `components/About.js`     | Takes you to the about page.                                                    |
+| /recipes.             | `components/Recipes.js`   | Shows all user's saved recipes                                                  |
+| /myrecipe             | `components/MyRecipe.js`  | Shows all saved recipes by logged in user                                       |
+| /newrecipe            | `components/MyRecipe.js`  | Takes logged in user to the add recipe page                                     |
+| /nutrition            | `components/Nutrition.js` | Search for calories
 
 ## Wireframe
 <br>
@@ -67,31 +93,32 @@ Made by:
     - Bootstrap
     - React
   ### Back End  
-    - Node
+    - Node w/express
     - MongoDb
-    - Mongoose
-    - JWT
+    - Heroku
+    - Postman
 
 ## Install & Run
- (copy link )
-
+ - #### Frontend (https://github.com/AydaMkd/milestoneProject3-frontend.git)
+ - #### npm install
+ - #### Backend (https://github.com/AydaMkd/milestoneProject3-backend.git)
+ - #### nodemon
 ## Usage
-User should be able to submit their own recipes, keep their favorite receipts, rate and comment in other user's recipes. 
 
+User should be able to submit their own recipes, keep their favorite recicpes, rate and comment on other users recipes.
 ## Sources
+
+#### :star: :star: :star: Special Thanks to Software Developer Mai Vang for walking us through Edit, Delete buttons and our Modal :star: :star: :star:
+
 ### Learned to align images on readme.
 (https://stackoverflow.com/questions/12090472/how-do-i-center-an-image-in-the-readme-md-file-on-github)
-
-### YouTube tutorial on how to start a recipe app.
-
-(https://www.youtube.com/watch?v=xc4uOzlndAk)
 
 ### guide to add background images.
 (https://www.w3schools.com/jsref/prop_style_backgroundimage.asp)
 
 ### bootstrap cards documentation.
 (https://www.w3schools.com/bootstrap4/bootstrap_cards.asp)
-a
+
 ## Tracking progress
 
 - [Trello](https://trello.com/invite/b/AsBfEMwg/66a0d22147eb32999c88a726b98d6b04/kans-sd-01-final-project)
@@ -106,31 +133,28 @@ a
 
  ### Home Page
 
-- Use cards from bootstrap
+- Used cards from bootstrap
 
+[calorieninjas API](https://calorieninjas.com/api)
 
-[Spoonacular API](https://rapidapi.com/blog/recipe-apis/)
-
+:art:
 [ColorPalettes1](https://coolors.co/palette/f7b267-f79d65-f4845f-f27059-f25c54)
-
+:art:
 [ColorPalettes2](https://coolors.co/palette/fff460-fccf3c-fc9d28-ed7c1a-f25b09)
 
 
-### Issues
-
-#### Working as a team being in constant communication is key. We do run into a merge issues with our branches.
 <br>
 
 ### What we learned:
 - When working as a team, make sure to work in the latest version of the repository.
-- git pull origin main it is a must, so you do not override the previous work of your team.
 - Connecting the Front-End with Back-End.
-- Some programs version number change so our code deprecated. The code superseded by newer code. Code was not inmediately removed because can cause a regression in the application. 
-- Time frame, Install everything we want in short amount of time.
+- Some dependencies have different versions so our code deprecated. The code was superseded by the newer one. Code was not inmediately removed because this can cause a regression in the application. 
+- Time frame, implementing the features we planned in a short amount of time.
 
 ### Work In Progress
-- Calorie Counts
+- Calories Count
 - Serving Conversion (MyCookbook.io)
 - Add Difficulty Rating
-- inventory of ingredients in pantry 
-- link to grocery store shopping car for missing ingredients
+- Inventory of ingredients in pantry 
+- Link to grocery store shopping cart for missing ingredients
+
