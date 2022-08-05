@@ -21,8 +21,7 @@ https://recipesharingfrontend.herokuapp.com/
 - [Usage](#usage)
 - [Sources](#sources)
 - [Tracking](#tracking)
-- [relationships](#relationships)
-- [Issues](#issues)
+- [Relationships](#relationships)
 - [Work In Progress](#WorkInProgress)
 
 ## Project Description
@@ -116,10 +115,10 @@ The user should be able to submit their own recipes, keep their favorite recipes
 ### Learned to align images on readme.
 (https://stackoverflow.com/questions/12090472/how-do-i-center-an-image-in-the-readme-md-file-on-github)
 
-### guide to add background images.
+### Guide to add background images.
 (https://www.w3schools.com/jsref/prop_style_backgroundimage.asp)
 
-### bootstrap cards documentation.
+### Bootstrap cards documentation.
 (https://www.w3schools.com/bootstrap4/bootstrap_cards.asp)
 
 ## Tracking progress
